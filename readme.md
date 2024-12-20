@@ -1,5 +1,5 @@
 ## Project Description
 
-* [live example](https://learning-zone.github.io/website-templates/my-portfolio-two/)
+My portfolio website.
 
-![alt text](https://github.com/learning-zone/Website-Templates/blob/master/assets/my_portfolio_two.png "my_portfolio_two")
+Design from: https://github.com/Sathish2905/sample-website-templates/tree/master/my-portfolio-two

@@ -20,7 +20,6 @@
           <li><a href="index.html">home</a></li>
           <li><a href="about.html">about me</a></li>
           <li><a href="portfolio.html">my portfolio</a></li>
-          <li><a href="blog.html">blog</a></li>
           <li class="current"><a href="contact.php">contact</a></li>
         </ul>
       </nav>
@@ -44,7 +43,7 @@
           // 1. Enter the email address you would like the enquiry sent to
           // 2. Enter the subject of the email you will receive, when someone contacts you
           // 3. Enter the text that you would like the user to see once they submit the contact form
-          $to = 'email@emailaddress.com';
+          $to = 'btdnu918u@mozmail.com';
           $subject = 'Enquiry from the website';
           $contact_submitted = 'Your message has been sent.';
 

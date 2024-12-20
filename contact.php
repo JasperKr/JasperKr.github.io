@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>my portfolio two</title>
+<title>Contact Jasper Krocké</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -14,35 +14,26 @@
 <body>
   <div id="main">
     <header>
-      <div id="logo"><h1>MY<a href="#">PORTFOLIO</a>TWO</h1></div>
+    <div id="logo">
+        <h1>Jasper&nbsp;Krocké</h1>
+      </div>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about me</a></li>
-          <li><a href="portfolio.html">my portfolio</a></li>
-          <li class="current"><a href="contact.php">contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="current"><a href="Contact.php">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <div id="gallery">
-          <ul class="images">
-            <li class="show"><img width="450" height="450" src="images/1.jpg" alt="photo_one" /></li>
-            <li><img width="450" height="450" src="images/2.jpg" alt="photo_two" /></li>
-            <li><img width="450" height="450" src="images/3.jpg" alt="photo_three" /></li>
-            <li><img width="450" height="450" src="images/4.jpg" alt="photo_four" /></li>
-            <li><img width="450" height="450" src="images/5.jpg" alt="photo_five" /></li>
-          </ul>
-        </div>
-      </div>
-      <div id="content">
+    <div id="textonly_content">
+      <div id="textonly_main_content">
         <h1>Contact</h1>
         <?php
           // Set-up these 3 parameters
           // 1. Enter the email address you would like the enquiry sent to
           // 2. Enter the subject of the email you will receive, when someone contacts you
-          // 3. Enter the text that you would like the user to see once they submit the contact form
+          // 3. Enter the text that you would like the user to see once they submit the Contact form
           $to = 'btdnu918u@mozmail.com';
           $subject = 'Enquiry from the website';
           $contact_submitted = 'Your message has been sent.';
@@ -52,7 +43,7 @@
             return preg_match('/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i',$email);
           }
           if (!email_is_valid($to)) {
-            echo '<p style="color: red;">You must set-up a valid (to) email address before this contact page will work.</p>';
+            echo '<p style="color: red;">You must set-up a valid (to) email address before this Contact page will work.</p>';
           }
           if (isset($_POST['contact_submitted'])) {
             $return = "\r";
@@ -78,11 +69,11 @@
           $number_2 = rand(1, 9);
           $answer = substr(md5($number_1+$number_2),5,10);
         ?>
-        <form id="contact" action="contact.php" method="post">
+        <form id="Contact" action="Contact.php" method="post">
           <div class="form_settings">
-            <p><span>Name</span><input class="contact" type="text" name="your_name" value="<?php echo $yourname; ?>" /></p>
-            <p><span>Email Address</span><input class="contact" type="text" name="your_email" value="<?php echo $youremail; ?>" /></p>
-            <p><span>Message</span><textarea class="contact textarea" rows="5" cols="50" name="your_message"><?php echo $yourmessage; ?></textarea></p>
+            <p><span>Name</span><input class="Contact" type="text" name="your_name" value="<?php echo $yourname; ?>" /></p>
+            <p><span>Email Address</span><input class="Contact" type="text" name="your_email" value="<?php echo $youremail; ?>" /></p>
+            <p><span>Message</span><textarea class="Contact textarea" rows="5" cols="50" name="your_message"><?php echo $yourmessage; ?></textarea></p>
             <p style="padding: 10px 0; line-height: 2em;">To help prevent spam, please enter the answer to this question:</p>
             <p><span><?php echo $number_1; ?> + <?php echo $number_2; ?> = ?</span><input type="text" name="user_answer" /><input type="hidden" name="answer" value="<?php echo $answer; ?>" /></p>
             <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="send" /></p>
@@ -91,8 +82,8 @@
       </div>
     </div>
     <footer>
-      <p><a href="index.html">home</a> | <a href="about.html">about me</a> | <a href="portfolio.html">my portfolio</a> | <a href="blog.html">blog</a> | <a href="contact.php">contact</a></p>
-      <p>&copy; 2012 my portfolio two. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+      <p><a href="index.html">Home</a> | <a href="about.html">About me</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">blog</a> | <a href="Contact.php">Contact</a></p>
+      <p>&copy; 2012 Portfolio two. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
@@ -104,7 +95,7 @@
     $(function() {
       $("#lava_menu").lavaLamp({
         fx: "backout",
-        speed: 700
+        speed: 500
       });
     });
   </script>

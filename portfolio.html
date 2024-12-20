@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>my portfolio two</title>
+  <title>Portfolio of Jasper Krocké</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -15,38 +15,58 @@
   <div id="main">
     <header>
       <div id="logo">
-        <h1>MY<a href="#">PORTFOLIO</a>TWO</h1>
+        <h1>Jasper&nbsp;Krocké</h1>
       </div>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about me</a></li>
-          <li class="current"><a href="portfolio.html">my portfolio</a></li>
-          <li><a href="contact.php">contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li class="current"><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="Contact.php">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <div id="gallery">
-          <ul class="images">
-            <li class="show"><img width="450" height="450" src="images/1.jpg" alt="photo_one" /></li>
-            <li><img width="450" height="450" src="images/2.jpg" alt="photo_two" /></li>
-            <li><img width="450" height="450" src="images/3.jpg" alt="photo_three" /></li>
-            <li><img width="450" height="450" src="images/4.jpg" alt="photo_four" /></li>
-            <li><img width="450" height="450" src="images/5.jpg" alt="photo_five" /></li>
-          </ul>
-        </div>
-      </div>
-      <div id="content">
-        <h1>My Portfolio</h1>
-
-        <p></p>
+    <div id="textonly_content">
+      <div id="textonly_main_content">
+        <h1>Portfolio</h1>
+        <h2>Projects:</h2>
+        <p>Here are some of my projects:</p>
+        <h3>Rhodium</h3>
+        <p>Rhodium is a 3D game engine written in Lua and GLSL. It's built on top of the LÖVE game framework and uses mainly Vulkan, but also supports OpenGL and Metal for rendering,
+          Thanks <a href="https://github.com/slime73">Sasha</a> and all other contributers for making such a great framework!</p>
+        This is the project i'm currently working on and also the one i've been working on the longest, it's a project i'm very proud of and i'm very happy with the progress i've made so far.<br />
+        Although it's a pretty standard deferred renderer, it's still a great learning experience and i'm learning new things every day.<br />
+        Some of the features of Rhodium are:<br />
+        <ul>
+          <li>Physically based rendering, inspired by <a href="https://github.com/google/filament">The Google Filament renderer</a></li>
+          <li>Lighting from Directional, Point, Spot, Quad area and Sphere area Lights</li>
+          <li>Image based lighting, with in-engine IBL generation</li>
+          <li>Screen space reflections with GGX distribution for sampling</li>
+          <li>Realtime shadows for directional, point and spot lights</li>
+          <li>Post processing effects like Bloom, Auto exposure, Tonemapping</li>
+          <li>A GLTF 2.0 object loader, adapted from <a href="https://github.com/rozenmad/Menori"> Menori</a> to use multithreading</li>
+          <li>Ambient occlusion with GTAO, using <a href="https://github.com/GameTechDev/XeGTAO"> XeGTAO </a> translated to GLSL</li>
+        </ul>
+        The project is currently closed source, but i'm planning on making it open source in the future when it's more stable.<br /><br />
+        <img src="images/2.png" alt="Rhodium">
+        <h3>Vulkan Renderer</h3>
+        <p>This is a project i made to learn more about the Vulkan API, it's a simple renderer that uses C++ and Vulkan to render models with their albedo maps.</p>
+        <p>I haven't continued working on this project as i find Vulkan tedious to work with and i find it's more interesting to work on Rhodium,
+          but it was still a great learning experience and i learned a lot about the Vulkan API.<br />
+          <a href="https://github.com/JasperKr/VulkanTest">Here</a> is the github repository for this project.
+        </p>
+        <img src="images/vulkan.png" alt="Vulkan Renderer">
+        <h3>Raytracer</h3>
+        <p>This is a project i made to learn more about raytracing, it's a simple raytracer that uses the LÖVE game framework and lot of code i copied from Rhodium to setup a scene.<br />
+          I occasionally work on this project to make improvements, but my interest lies more in realtime rendering than offline rendering.<br />
+          <a href="https://github.com/JasperKr/Raytracing">Here</a> is the github repository for this project.
+        </p>
+        <img src="images/raytracer.png" alt="Raytracer">
       </div>
     </div>
     <footer>
-      <p><a href="index.html">home</a> | <a href="about.html">about me</a> | <a href="portfolio.html">my portfolio</a> | <a href="contact.php">contact</a></p>
-      <p>&copy; 2012 my portfolio two. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+      <p><a href="index.html">Home</a> | <a href="about.html">About me</a> | <a href="portfolio.html">Portfolio</a> | <a href="Contact.php">Contact</a></p>
+      <p>&copy; 2012 Portfolio two. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
@@ -58,7 +78,7 @@
     $(function () {
       $("#lava_menu").lavaLamp({
         fx: "backout",
-        speed: 700
+        speed: 500
       });
     });
   </script>

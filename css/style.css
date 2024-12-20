@@ -136,37 +136,13 @@ footer {
 }
 
 header {
-  width: 700px;
+  width: 60%;
   height: 165px;
-}
-
-#logo {
-  width: 200px;
-  float: left;
-  height: 100px;
-  background: transparent;
-  padding: 0 0 10px 10px;
-}
-
-#logo h1 {
-  font: normal 330% 'News Cycle', arial, sans-serif;
-  padding: 37px 0 0 17px;
-  color: #222;
-}
-
-#logo h1 a {
-  color: #999;
-  text-decoration: none;
-}
-
-#logo h1 a:hover {
-  color: #222;
-  text-decoration: none;
 }
 
 nav {
   height: 150px;
-  width: 720px;
+  width: 90%;
   margin: 5px auto 0 auto;
   padding: 35px 0 0 0;
 }
@@ -363,7 +339,6 @@ ul img {
   padding: 15px 5px 15px 0;
   margin: 10px 0 0 0;
   overflow: hidden;
-  float: right;
 }
 
 .lavaLampWithImage li {

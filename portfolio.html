@@ -32,17 +32,20 @@
         <p>Rhodium is a 3D game engine written in Lua and GLSL. It's built on top of the LÖVE game framework and uses mainly Vulkan, but also supports OpenGL and Metal for rendering,
           Thanks <a href="https://github.com/slime73">Sasha</a> and all other contributers for making such a great framework!</p>
         This is the project i'm currently working on and also the one i've been working on for the longest, it's a project i'm very proud of and i'm very happy with the progress i've made so far.<br />
-        Although it's a pretty standard deferred renderer, it's still a great learning experience and i'm learning new things every day.<br />
+        This project has been a great learning experience and i'm learning new things every day.<br />
         Some of the features of Rhodium are:<br />
         <ul>
           <li>Physically based rendering, inspired by <a href="https://github.com/google/filament">The Google Filament renderer</a></li>
           <li>Lighting from Directional, Point, Spot, Quad area and Sphere area Lights</li>
           <li>Image based lighting, with in-engine IBL generation</li>
-          <li>Screen space reflections with GGX distribution for sampling</li>
+          <li>Hi-Z Screen space reflections with GGX distribution for sampling</li>
           <li>Realtime shadows for directional, point and spot lights</li>
           <li>Post processing effects like Bloom, Auto exposure, Tonemapping</li>
           <li>A GLTF 2.0 object loader, adapted from <a href="https://github.com/rozenmad/Menori"> Menori</a> to use multithreading</li>
           <li>Ambient occlusion with GTAO, using <a href="https://github.com/GameTechDev/XeGTAO"> XeGTAO </a> translated to GLSL</li>
+          <li>Tiled light rendering, allowing for hunderds of actively contributing lights</li>
+          <li>Cascaded shadow maps for directional lights</li>
+          <li>GPU driven particle system with support for millions of simulated particles</li>
         </ul>
         The project is currently closed source, but i'm planning on making it open source in the future when it's more stable.<br /><br />
         <img src="images/1.png" alt="Rhodium">
@@ -61,10 +64,6 @@
         <img src="images/raytracer.png" alt="Raytracer">
       </div>
     </div>
-    <footer>
-      <p><a href="index.html">Home</a> | <a href="about.html">About me</a> | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a></p>
-      <p>&copy; 2012 Portfolio two. All Rights Reserved. | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
-    </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
   <script type="text/javascript" src="js/jquery.min.js"></script>

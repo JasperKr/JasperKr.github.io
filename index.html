@@ -1,66 +1,13 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-  <title>Jasper Krocké</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-</head>
-
-<body>
-  <div id="main">
-    <header id="header">
-      <nav>
-        <ul class="lavaLampWithImage" id="lava_menu">
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About me</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <div class="gallery">
-          <ul class="images">
-            <li><img class="slideshowImage" width=100% src="images/1.png" alt="photo_one" /></li>
-            <li><img class="slideshowImage" width=100% src="images/2.png" alt="photo_two" /></li>
-            <li><img class="slideshowImage" width=100% src="images/3.png" alt="photo_three" /></li>
-            <li><img class="slideshowImage" width=100% src="images/4.png" alt="photo_four" /></li>
-            <li><img class="slideshowImage" width=100% src="images/5.png" alt="photo_five" /></li>
-            <li><img class="slideshowImage" width=100% src="images/raytracer.png" alt="photo_raytracer" /></li>
-            <li><img class="slideshowImage" width=100% src="images/6.png" alt="photo_six" /></li>
-          </ul>
-        </div>
-      </div>
-      <div id="content">
-        <h1>Welcome to my Portfolio</h1>
-        <p>Hi, I'm Jasper Krocké, an aspiring graphics programmer. </p>
-        <p>This is my portfolio website, where I showcase some of my projects. </p>
-        <p>Feel free to look around and contact me if you have any questions!</p>
-        <p>Learn more about me <a href="about.html">here</a><br />
-          Check out my portfolio <a href="portfolio.html">here</a><br />
-          Or contact me <a href="contact.html">here</a></p>
-      </div>
-    </div>
-  </div>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="js/image_fade.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#lava_menu").lavaLamp({
-        fx: "backout",
-        speed: 500
-      });
-    });
-  </script>
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

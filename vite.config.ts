@@ -1,14 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 import path from 'path'
-import glsl from 'vite-plugin-glsl'
 import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
 import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), glsl()],
+  plugins: [react()],
+  css: {
+      postcss: {
+        plugins: [tailwindcss, autoprefixer],
+      },
+    },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, './src'),

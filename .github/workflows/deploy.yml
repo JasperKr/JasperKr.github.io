@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Copy images
-        run: cp -r assets/images dist/assets/images
+        run: cp -r assets dist/assets
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

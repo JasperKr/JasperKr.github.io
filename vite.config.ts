@@ -11,5 +11,8 @@ export default defineConfig({
     },
   },
   // base: '/JasperKr.github.io/',
-  base: "/"
+  base: "/",
+  build: {
+    sourcemap: false,  // Disable source maps in production
+  },
 })

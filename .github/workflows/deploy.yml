@@ -29,12 +29,12 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Copy images
+        run: cp -r assets/images dist/assets/images
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
-      # Copy the contents of /assets/images to /dist/assets/images
-      - name: Copy images
-        run: cp -r assets/images dist/assets/images

@@ -13,10 +13,10 @@ function About() {
 
             <h2 className="text-2xl m-3">Skills:</h2>
             <ul className="list-disc text-left m-3">
-                <li>Programming languages: Lua(JIT), GLSL, C, C++, C#, Python, TypeScript</li>
-                <li>Software: Visual Studio Code, Blender, Rhino</li>
-                <li>APIs: OpenGL, Vulkan</li>
-                <li>Other: Git, Agile, Scrum</li>
+                <li>Programming languages: Lua(JIT), GLSL, C, C++, C#, Python, TypeScript.</li>
+                <li>Software: Visual Studio Code, Blender, Rhino.</li>
+                <li>APIs: OpenGL, Vulkan.</li>
+                <li>Other: Git, Agile, Scrum.</li>
             </ul>
             <h2 className="text-2xl m-3">Experience & Education:</h2>
             <p>Currently studying IT at Hogeschool Rotterdam </p>

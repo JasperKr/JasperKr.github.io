@@ -10,8 +10,8 @@ export default defineConfig({
       plugins: [autoprefixer],
     },
   },
-  // base: '/JasperKr.github.io/',
-  base: "/",
+  base: '/jasperkr.github.io/',
+  // base: "/",
   build: {
     sourcemap: false,  // Disable source maps in production
   },

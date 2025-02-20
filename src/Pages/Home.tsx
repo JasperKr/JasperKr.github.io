@@ -13,7 +13,7 @@ function Home() {
         </Textbox>
         <Textbox>
             <ImageCarousel />
-        <p className="text-xs">Drag to the left / right, or click the arrows to navigate the carousel</p>
+        <p className="text-xs">Drag to the left / right, or click the arrows to navigate the carousel.</p>
         </Textbox>
         <Textbox>
             <p>Learn more about me <a href="">here</a><br />

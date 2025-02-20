@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../App.css'
 import { ImageCarousel } from '../carousel'
 import Textbox from '../Textbox'
@@ -16,9 +17,9 @@ function Home() {
         <p className="text-xs">Drag to the left / right, or click the arrows to navigate the carousel.</p>
         </Textbox>
         <Textbox>
-            <p>Learn more about me <a href="">here</a><br />
-                Check out my portfolio <a href="">here</a><br />
-                Or contact me <a href="">here</a></p>
+            <p>Learn more about me <Link to="/about" className="hover:text-gray-500">Here</Link></p>
+            <p>Check out my projects <Link to="/projects" className="hover:text-gray-500">Here</Link></p>
+            <p>Or contact me <Link to="/contact" className="hover:text-gray-500">Here</Link></p>
         </Textbox>
     </div>
   )

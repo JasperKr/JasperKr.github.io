@@ -1,4 +1,4 @@
-import Textbox from "@/Textbox"
+import Textbox from "../Textbox"
 
 function Contact() {
     return (

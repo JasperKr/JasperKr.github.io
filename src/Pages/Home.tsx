@@ -1,6 +1,6 @@
-import '@/App.css'
-import { ImageCarousel } from '@/carousel'
-import Textbox from '@/Textbox'
+import '../App.css'
+import { ImageCarousel } from '../carousel'
+import Textbox from '../Textbox'
 
 function Home() {
   return (

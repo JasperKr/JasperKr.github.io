@@ -3,7 +3,7 @@ import Textbox from "../Textbox"
 
 function Projects() {
   return (
-    <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-7xl text-left m-3">
+    <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-7xl text-left m-3 min-w-2xl">
         <h1 className="p-5 text-center text-4xl">Projects</h1>
         <Textbox>
             <p>Here you can find some extra info on the projects i've worked on as a hobby.</p>

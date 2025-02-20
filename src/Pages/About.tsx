@@ -2,7 +2,7 @@ import Textbox from "../Textbox";
 
 function About() {
     return (
-        <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-7xl text-left m-3">
+        <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-7xl text-left m-3 min-w-2xl">
             <Textbox>
             <h1>About Me</h1>
             <p>Hi! I'm Jasper, a second year student at hogeschool rotterdam studying IT in the netherlands.</p>

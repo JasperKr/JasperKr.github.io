@@ -10,5 +10,6 @@ export default defineConfig({
       plugins: [autoprefixer],
     },
   },
-  base: '/JasperKr.github.io/', // Make sure this matches your GitHub repo name
+  // base: '/JasperKr.github.io/',
+  base: "/"
 })

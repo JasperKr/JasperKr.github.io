@@ -35,3 +35,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
+      # Copy the contents of /assets/images to /dist/assets/images
+      - name: Copy images
+        run: cp -r assets/images dist/assets/images

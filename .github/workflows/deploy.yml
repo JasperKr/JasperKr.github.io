@@ -26,6 +26,9 @@ jobs:
           rm -rf node_modules package-lock.json
           npm install
 
+      - name: Clean up
+        run: rm -rf dist
+
       - name: Build project
         run: npm run build
 

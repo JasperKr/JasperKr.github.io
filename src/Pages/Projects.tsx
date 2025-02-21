@@ -3,7 +3,7 @@ import Textbox from "../Textbox"
 
 function Projects() {
   return (
-    <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-7xl text-left m-3 min-w-2xl">
+    <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-11/12 text-left m-3 min-w-2xl">
         <h1 className="p-5 text-center text-4xl">Projects</h1>
         <Textbox>
             <p>Here you can find some extra info on the projects i've worked on as a hobby.</p>
@@ -44,7 +44,7 @@ function Projects() {
                 but it was still a great learning experience and i learned a lot about the Vulkan API.<br />
                 <a href="https://github.com/JasperKr/VulkanTest">This</a> is the github repository for the project.
             </p>
-            <img src="assets/images/8.png" alt="Vulkan Renderer" className="rounded-lg shadow-lg mx-auto"/>
+            <img src="assets/images/7.png" alt="Vulkan Renderer" className="rounded-lg shadow-lg mx-auto"/>
         </Textbox>
         
         <Textbox>

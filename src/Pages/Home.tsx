@@ -5,7 +5,7 @@ import Textbox from '../Textbox'
 
 function Home() {
   return (
-    <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-zinc-300 max-w-7xl min-w-2xl">
+    <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-11/12 text-left m-3 min-w-2xl">
         <Textbox>
             <p>Hi! I'm Jasper Krocké, an aspiring graphics programmer. </p>
             <p>This is my personal website, where I showcase some of my projects. </p>

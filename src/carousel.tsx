@@ -28,7 +28,7 @@ const descriptions = [
 
 export function ImageCarousel() {
   return (
-    <Carousel className="w-full max-w-4xl">
+    <Carousel className="w-full">
       <CarouselContent>
         {Array.from({ length: 7 }).map((_, index) => (
           <CarouselItem key={index}>

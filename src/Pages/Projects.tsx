@@ -3,7 +3,7 @@ import Textbox from "../Textbox"
 
 function Projects() {
   return (
-    <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-11/12 text-left m-3 min-w-2xl">
+    <div className="dark:bg-zinc-900 mx-auto p-5 rounded-lg shadow-lg dark:text-gray-300 max-w-11/12 text-left m-3">
         <h1 className="p-5 text-center text-4xl">Projects</h1>
         <Textbox>
             <p>Here you can find some extra info on the projects i've worked on as a hobby.</p>
@@ -33,7 +33,7 @@ function Projects() {
                 <li>Cascaded shadow maps for directional lights</li>
                 <li>GPU driven particle system with support for millions of simulated particles</li>
             </ul>
-            <img src="assets/images/1.png" alt="Rhodium" className="rounded-lg shadow-lg mx-auto"/>
+            <img src="assets/images/1.png" alt="Rhodium" className="rounded-lg shadow-lg mx-auto w-[80vw]"/>
             <p>The project is currently closed source, but i'm planning on making it open source in the future when it's more stable.</p>
         </Textbox>
         
@@ -44,7 +44,7 @@ function Projects() {
                 but it was still a great learning experience and i learned a lot about the Vulkan API.<br />
                 <a href="https://github.com/JasperKr/VulkanTest">This</a> is the github repository for the project.
             </p>
-            <img src="assets/images/7.png" alt="Vulkan Renderer" className="rounded-lg shadow-lg mx-auto"/>
+            <img src="assets/images/7.png" alt="Vulkan Renderer" className="rounded-lg shadow-lg mx-auto w-[80vw]"/>
         </Textbox>
         
         <Textbox>
@@ -53,7 +53,7 @@ function Projects() {
                 I occasionally work on this project to make improvements, but my interest lies more in realtime rendering than offline rendering.<br />
                 <a href="https://github.com/JasperKr/Raytracing">This</a> is the github repository for the project.
             </p>
-            <img src="assets/images/2.png" alt="Raytracer" className="rounded-lg shadow-lg mx-auto"/>
+            <img src="assets/images/2.png" alt="Raytracer" className="rounded-lg shadow-lg mx-auto w-[80vw]"/>
         </Textbox>
     </div>
   )

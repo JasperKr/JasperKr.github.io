@@ -2,7 +2,7 @@ import Textbox from "../Textbox"
 
 function Contact() {
     return (
-        <div className="min-w-2xl max-w-11/12">
+        <div className="max-w-11/12 mx-auto">
             <Textbox>
                 <h1>Contact</h1>
                 <br/>
